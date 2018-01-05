@@ -29,16 +29,24 @@ require_once("config.php");
 // echo $usuario;
 
 //CRIAR UM NOVO USUÁRIO
-// $aluno = new Usuario("student", "poi987");
+// $aluno = new Usuario("stve", "bbc098");
 // $aluno->insert();
 //
 // echo $aluno;
 
 //ATUALIZAR USÁRIO
+// $usuario = new Usuario();
+// $usuario->loadById(7);
+// $usuario->update("steve", "mcquen123");
+//
+// echo $usuario;
+
+//EXLUIR USUÁRIOS
 $usuario = new Usuario();
-$usuario->loadById(7);
-$usuario->update("professor", "prof123");
+$usuario->loadById(8);
+$usuario->delete();
 
 echo $usuario;
+
 
  ?>
